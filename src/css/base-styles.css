@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-primary);
+    background-color: var(--white-primary);
+    font-family: var(--main-font-regular);
+
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+
+:root {
+    --heading-font-bold: 'NyghtSerif-Bold', sans-serif;
+    --heading-font-bold-italic: 'NyghtSerif-BoldItalic', sans-serif;
+    --main-font-regular: 'ClashGrotesk-Regular', sans-serif;
+    --main-font-medium: 'ClashGrotesk-Medium', sans-serif;
+    --main-font-bold: 'ClashGrotesk-Bold', sans-serif;
+    --secondary-font-regular: 'AzeretMono-Regular', sans-serif;
+
+    --white-primary:    #F7F8F8;
+    --grey-01:          #C9CFCF;
+    --grey-02:          #ADB8B8;
+    --dark-primary:     #181823;
+    --dark-02:          #29293D;
+    --dark-03:          #3E3E5B;
+    --light-blue-01:    #E9F8F9;
+    --light-blue-02:    #C0EEF2;
+    --blue-01:          #537FE7;
+    --orange-01:        #D56B28;
+}
+
+@font-face {
+    font-family: 'NyghtSerif-Bold';
+    src: url('../assets/fonts/NyghtSerif-Bold.woff2') format('woff2'),
+         url('../assets/fonts/NyghtSerif-Bold.woff') format('woff'),
+         url('../assets/fonts/NyghtSerif-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'NyghtSerif-BoldItalic';
+    src: url('../assets/fonts/NyghtSerif-BoldItalic.woff2') format('woff2'),
+         url('../assets/fonts/NyghtSerif-BoldItalic.woff') format('woff'),
+         url('../assets/fonts/NyghtSerif-BoldItalic.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url('../assets/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('../assets/fonts/ClashGrotesk-Variable.woff') format('woff'),
+         url('../assets/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url('../assets/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('../assets/fonts/ClashGrotesk-Variable.woff') format('woff'),
+         url('../assets/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Bold';
+    src: url('../assets/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('../assets/fonts/ClashGrotesk-Variable.woff') format('woff'),
+         url('../assets/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'AzeretMono-Regular';
+    src: url('../assets/fonts/AzeretMono-Regular.woff2') format('woff2'),
+         url('../assets/fonts/AzeretMono-Regular.woff') format('woff'),
+         url('../assets/fonts/AzeretMono-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+}
+
+header, footer, section, main {
+    max-width: 80rem;
+}

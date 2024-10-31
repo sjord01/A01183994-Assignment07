@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    author:     Samson James Ordonez
+    version:    1.0
+    comments:   for COMP 2312 Assignment 06
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Assignment07</title>
+
+    <script src="src/javascript/jquery-3.7.0.min.js" defer></script>
+    <script src="src/javascript/product-gallery.js" defer></script>
+
+</head>
+
+<body>
+    <div class="wrapper-body">
+        <header class="primary-header flex">
+            <h2>Assignment 07</h2>
+        </header>
+
+        <main>
+            <section>  
+                <h1>JavaScript Event Handling, DOM manipulation, and Form Processing</h1>
+                <p>This assignment involves creating an interactive HTML form that includes various input types, such as text fields, a password input, a date picker, and a dropdown menu for course selection. The form will feature custom CSS for styling and JavaScript for validation to enhance the user experience. Key features include a tooltip for the student ID field and a toggle to show or hide the password. Additionally, the form will have restrictions on date inputs, specific validation rules, and error handling to ensure a comprehensive and user-friendly submission process.</p>
+            </section>
+
+            <section>
+                <h2>Product: T-Shirt</h2>
+                <form class="grid" id="product-form" action="./src/html/thank-you.html" method="POST">
+                    <article id="gallery" class="product-nav-container">
+                        <h3>Product Images</h3>
+                        <div class="main-slide">
+                            <img src="src/assets/images/product-images/t-shirt-black-no-model.jpg" alt="T-shirt product, no model" id="slide-variable">
+                        </div>
+                        <div class="thumbnails flex" id="thumbnails">
+                            <a href="src/assets/images/product-images/t-shirt-black-no-model.jpg">
+                                <img src="src/assets/images/product-images/t-shirt-black-no-model.jpg" alt="T-shirt product, no model">
+                            </a>
+                            <a href="src/assets/images/product-images/t-shirt-black-front.jpg">
+                                <img src="src/assets/images/product-images/t-shirt-black-front.jpg" alt="T-shirt product, front">
+                            </a>
+                            <a href="src/assets/images/product-images//t-shirt-black-back.jpg">
+                                <img src="src/assets/images/product-images/t-shirt-black-back.jpg" alt="T-shirt product, back">
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-nav-container" id="choose-quantity">
+                        <h4>Choose Quantity</h4>
+                        <div class="quantity-counter flex">
+                            <button type="button" class="btn-product-count" id="decrease-btn"></button>
+                            <input type="number" class="quantity-input" name="quantity-input" value="1" min="1">
+                            <button type="button" class="btn-product-count" id="increase-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="product-nav-container" id="color-selection">
+                        <h4>Choose Color</h4>
+                        <input type="radio" id="t-shirt-black" name="t-shirt-color" value="Black" checked>
+                        <label for="t-shirt-black">Black</label>
+                        
+                        <input type="radio" id="t-shirt-red" name="t-shirt-color" value="Red">
+                        <label for="t-shirt-red">Red</label>
+                        
+                        <input type="radio" id="t-shirt-grey" name="t-shirt-color" value="Grey">
+                        <label for="t-shirt-grey">Grey</label>
+                    </article>
+                    
+                    <article class="product-nav-container" id="size-selection">
+                        <h4>Choose Size</h4>
+                        <input type="radio" id="t-shirt-size-small" name="t-shirt-size" value="Small">
+                        <label for="t-shirt-size-small">Small</label>
+                        
+                        <input type="radio" id="t-shirt-size-medium" name="t-shirt-size" value="Medium">
+                        <label for="t-shirt-size-medium">Medium</label>
+                        
+                        <input type="radio" id="t-shirt-size-large" name="t-shirt-size" value="Large">
+                        <label for="t-shirt-size-large">Large</label>
+                    </article>
+
+                    <div class="product-container flex" id="container-form-btn">
+                        <button type="submit" name="buy-product">Choose a size to submit</button>
+                    </div>
+                </form>
+
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
